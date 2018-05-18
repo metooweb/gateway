@@ -1,0 +1,387 @@
+2018/05/13 13:40:58 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56314: ....
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc04213c320)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174010, 0xc04216e200)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174010, 0xc04216e200)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174010, 0xc04216e200)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174010, 0xc04216e000, 0xc0421320c0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174010, 0xc04216e000, 0xc0421320c0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174010, 0xc04216e000)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174010, 0xc04216e000)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174010, 0xc04216e000, 0xc0421320a0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174010, 0xc04216e000)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e000, 0xc04216e000)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e000, 0xc04216e000)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc04213c320, 0x874320, 0xc042134040)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:40:58 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56315: ....
+goroutine 33 [running]:
+net/http.(*conn).serve.func1(0xc042176000)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174020, 0xc04216e400)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174020, 0xc04216e400)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174020, 0xc04216e400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174020, 0xc042136300, 0xc0421322a0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174020, 0xc042136300, 0xc0421322a0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174020, 0xc042136300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174020, 0xc042136300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174020, 0xc042136300, 0xc042132280)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174020, 0xc042136300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e0e0, 0xc042136300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e0e0, 0xc042136300)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc042176000, 0x874320, 0xc042016300)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:40:58 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56316: ....
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc0421760a0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042122010, 0xc0421ee100)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042122010, 0xc0421ee100)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042122010, 0xc0421ee100)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042122010, 0xc042136400, 0xc042124060)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042122010, 0xc042136400, 0xc042124060)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042122010, 0xc042136400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042122010, 0xc042136400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042122010, 0xc042136400, 0xc042124040)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042122010, 0xc042136400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc0421ea000, 0xc042136400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc0421ea000, 0xc042136400)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421760a0, 0x874320, 0xc0420163c0)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:40:58 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56317: ....
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0421dc0a0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042122020, 0xc0421ee300)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042122020, 0xc0421ee300)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042122020, 0xc0421ee300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042122020, 0xc04216e500, 0xc0421240e0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042122020, 0xc04216e500, 0xc0421240e0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042122020, 0xc04216e500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042122020, 0xc04216e500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042122020, 0xc04216e500, 0xc0421240c0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042122020, 0xc04216e500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc0421ea0e0, 0xc04216e500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc0421ea0e0, 0xc04216e500)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421dc0a0, 0x874320, 0xc042134400)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:40:58 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56318: ....
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc0421dc1e0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174028, 0xc04216e800)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174028, 0xc04216e800)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174028, 0xc04216e800)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174028, 0xc04216e600, 0xc042132300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174028, 0xc04216e600, 0xc042132300)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174028, 0xc04216e600)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174028, 0xc04216e600)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174028, 0xc04216e600, 0xc0421322e0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174028, 0xc04216e600)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e1c0, 0xc04216e600)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e1c0, 0xc04216e600)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421dc1e0, 0x874320, 0xc042134480)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:03 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56328: ....
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc0421dc280)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174030, 0xc04216eb00)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174030, 0xc04216eb00)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174030, 0xc04216eb00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174030, 0xc04216e900, 0xc042132360)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174030, 0xc04216e900, 0xc042132360)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174030, 0xc04216e900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174030, 0xc04216e900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174030, 0xc04216e900, 0xc042132340)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174030, 0xc04216e900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e2a0, 0xc04216e900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e2a0, 0xc04216e900)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421dc280, 0x874320, 0xc0421345c0)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:13 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56342: ....
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0421763c0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc0420040d0, 0xc042136700)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc0420040d0, 0xc042136700)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc0420040d0, 0xc042136700)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc0420040d0, 0xc042136500, 0xc042002460)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc0420040d0, 0xc042136500, 0xc042002460)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc0420040d0, 0xc042136500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc0420040d0, 0xc042136500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc0420040d0, 0xc042136500, 0xc042002440)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc0420040d0, 0xc042136500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc042242000, 0xc042136500)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc042242000, 0xc042136500)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421763c0, 0x874320, 0xc042016580)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:15 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56347: ....
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc042176460)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174048, 0xc04216ed00)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174048, 0xc04216ed00)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174048, 0xc04216ed00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174048, 0xc042136800, 0xc042132400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174048, 0xc042136800, 0xc042132400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174048, 0xc042136800)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174048, 0xc042136800)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174048, 0xc042136800, 0xc0421323e0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174048, 0xc042136800)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e380, 0xc042136800)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e380, 0xc042136800)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc042176460, 0x874320, 0xc042016780)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:16 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56348: ....
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc0421765a0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042174058, 0xc04216ef00)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042174058, 0xc04216ef00)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042174058, 0xc04216ef00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042174058, 0xc042136900, 0xc042132480)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042174058, 0xc042136900, 0xc042132480)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042174058, 0xc042136900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042174058, 0xc042136900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042174058, 0xc042136900, 0xc042132460)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042174058, 0xc042136900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc04218e460, 0xc042136900)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc04218e460, 0xc042136900)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421765a0, 0x874320, 0xc042016840)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:16 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56349: ....
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0421766e0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc0420040d8, 0xc042136c00)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc0420040d8, 0xc042136c00)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc0420040d8, 0xc042136c00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc0420040d8, 0xc042136a00, 0xc0420024c0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc0420040d8, 0xc042136a00, 0xc0420024c0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc0420040d8, 0xc042136a00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc0420040d8, 0xc042136a00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc0420040d8, 0xc042136a00, 0xc0420024a0)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc0420040d8, 0xc042136a00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc0422420e0, 0xc042136a00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc0422420e0, 0xc042136a00)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421766e0, 0x874320, 0xc042016980)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:16 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56350: ....
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc04213c500)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc042122038, 0xc0421ee600)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc042122038, 0xc0421ee600)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc042122038, 0xc0421ee600)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc042122038, 0xc0421ee400, 0xc042124180)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc042122038, 0xc0421ee400, 0xc042124180)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc042122038, 0xc0421ee400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc042122038, 0xc0421ee400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc042122038, 0xc0421ee400, 0xc042124160)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc042122038, 0xc0421ee400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc0421ea1c0, 0xc0421ee400)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc0421ea1c0, 0xc0421ee400)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc04213c500, 0x874320, 0xc042130240)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:41:46 D:/Go/src/net/http/server.go:2923: http: panic serving 127.0.0.1:56420: ....
+goroutine 55 [running]:
+net/http.(*conn).serve.func1(0xc0421dc3c0)
+	D:/Go/src/net/http/server.go:1726 +0xd7
+panic(0x78fe00, 0x86f0d0)
+	D:/Go/src/runtime/panic.go:505 +0x237
+main.initServer.func1(0x3064020, 0xc0420040e8, 0xc042136f00)
+	D:/Go/GOPATH/src/metooweb-gateway/server.go:17 +0xfc
+net/http.HandlerFunc.ServeHTTP(0x840120, 0x3064020, 0xc0420040e8, 0xc042136f00)
+	D:/Go/src/net/http/server.go:1947 +0x4b
+metooweb-gateway/vendor/github.com/gorilla/mux.(*Router).ServeHTTP(0xc042142380, 0x3064020, 0xc0420040e8, 0xc042136f00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/gorilla/mux/mux.go:159 +0xf4
+metooweb-gateway/vendor/github.com/urfave/negroni.Wrap.func1(0x3064020, 0xc0420040e8, 0xc042136d00, 0xc042002540)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:46 +0x54
+metooweb-gateway/vendor/github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc0420021e0, 0x3064020, 0xc0420040e8, 0xc042136d00, 0xc042002540)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:29 +0x55
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x871880, 0xc0420021e0, 0xc042002240, 0x3064020, 0xc0420040e8, 0xc042136d00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(middleware).ServeHTTP-fm(0x3064020, 0xc0420040e8, 0xc042136d00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0x67
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Logger).ServeHTTP(0xc04211a7e0, 0x3064020, 0xc0420040e8, 0xc042136d00, 0xc042002520)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/logger.go:66 +0x95
+metooweb-gateway/vendor/github.com/urfave/negroni.middleware.ServeHTTP(0x870e00, 0xc04211a7e0, 0xc042002220, 0x3064020, 0xc0420040e8, 0xc042136d00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:38 +0xac
+metooweb-gateway/vendor/github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc04211a7b0, 0x8740e0, 0xc0422421c0, 0xc042136d00)
+	D:/Go/GOPATH/src/metooweb-gateway/vendor/github.com/urfave/negroni/negroni.go:96 +0xf9
+net/http.serverHandler.ServeHTTP(0xc0421388f0, 0x8740e0, 0xc0422421c0, 0xc042136d00)
+	D:/Go/src/net/http/server.go:2694 +0xc3
+net/http.(*conn).serve(0xc0421dc3c0, 0x874320, 0xc042016b80)
+	D:/Go/src/net/http/server.go:1830 +0x658
+created by net/http.(*Server).Serve
+	D:/Go/src/net/http/server.go:2795 +0x282
+2018/05/13 13:42:25 D:/Go/src/net/http/server.go:2923: http: multiple response.WriteHeader calls
+2018/05/13 14:55:18 D:/Go/src/net/http/server.go:2923: http: multiple response.WriteHeader calls
+2018/05/13 15:52:28 D:/Go/src/net/http/server.go:2923: http: multiple response.WriteHeader calls

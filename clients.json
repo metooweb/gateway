@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "member",
+    "backend_url": "http://127.0.0.1:8051/api"
+  },
+  {
+    "id": 2,
+    "name": "goods",
+    "backend_url": "http://127.0.0.1:8052/api"
+  },
+  {
+    "id": 3,
+    "name": "cart",
+    "backend_url": "http://127.0.0.1:8053/api"
+  },
+  {
+    "id": 4,
+    "name": "order",
+    "backend_url": "http://127.0.0.1:8054/api"
+  },
+  {
+    "id": 5,
+    "name": "coin",
+    "backend_url": "http://127.0.0.1:8055/api"
+  }
+]

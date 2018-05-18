@@ -1,0 +1,42 @@
+[
+  {
+    "name": "goods.detail",
+    "client_id": 2
+  },
+  {
+    "name": "goods.search",
+    "client_id": 2
+  },
+  {
+    "name": "goods.category.get",
+    "client_id": 2
+  },
+  {
+    "name": "goods.category.list",
+    "client_id": 2
+  },
+  {
+    "name": "goods.brand.get",
+    "client_id": 2
+  },
+  {
+    "name": "goods.brand.list",
+    "client_id": 2
+  },
+  {
+    "name": "cart.add",
+    "client_id": 3
+  },
+  {
+    "name": "cart.set",
+    "client_id": 3
+  },
+  {
+    "name": "cart.del",
+    "client_id": 3
+  },
+  {
+    "name": "cart.detail",
+    "client_id": 3
+  }
+]
